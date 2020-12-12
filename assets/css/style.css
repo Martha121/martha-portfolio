@@ -51,3 +51,7 @@ h2 {
     padding-right: 40px;
 
 }
+.contact-section {
+    display: flex;
+    justify-content:space-between
+}
