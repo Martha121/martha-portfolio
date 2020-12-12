@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color:whitesmoke;
+    color: rgb(26, 122, 9);
+  }
+  /* Start  Style Header*/
+header{
+    padding:20px 35px;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+
+}
+header h1{
+    color: rgb(26, 122, 9);
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 10px;
+}
+a{
+    color:rgb(26, 122, 9);
+}
+header nav{
+    margin:7px 0;
+}
+header a{
+    text-decoration: none;
+}
+header nav ul li {
+    display: inline;
+}
+header nav ul li a{
+    margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;
+}
+/*End Style header*/
+/*starts About me section*/
+
+.about-section {
+    display: flex;
+    justify-content:space-between
+}
+h2 {
+    margin-right: 100px;
+    border-right:  3px solid;
+    padding-right: 40px;
+
+}
