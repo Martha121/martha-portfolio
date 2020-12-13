@@ -13,13 +13,13 @@ body {
   }
   /* Start  Style Header*/
 header{
-    padding:20px 10px;
+    padding:20px 35px;
     background-color:white;
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+
 }
 header h1{
     color: rgb(26, 122, 9);;
@@ -27,21 +27,18 @@ header h1{
     font-size: 36px;
     margin-top: 10px;
 }
-/* >>> did not see any effects from the following 
 a{
     color:rgb(26, 122, 9);
-    font-size: 10px;
 }
 header nav{
     margin:7px 0;
 }
-*/
+
 header nav ul li {
     display: inline;
 }
-
 header nav ul li a{
-  margin: 0 30px;
+    margin: 0 30px;
   font-weight: lighter;
   font-size: 22px;
   color: rgb(26, 122, 9);;
@@ -53,10 +50,6 @@ header nav ul li a{
 .hero-section{
     background-image:url("../images/austin_panorama.png");
     height: 400px;
-    display:flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width:100%;
 } 
 #hero-subtitle {
     background-color: rgb(26, 122, 9);
@@ -64,14 +57,19 @@ header nav ul li a{
     color: white;
     margin-right: 200px;
 }
+.hero-section{
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 
+}
 /*starts About me section*/
 
 .about-section {
     display: flex;
     flex-wrap:wrap;
     justify-content:left;
-    width: 100%;
+    width: 90%;
 }
 #about-me-text {
     max-width: 80%;
@@ -101,32 +99,31 @@ h2 {
         
 }
 .work-grid-item{
-    
+    background-color: white;
     border: solid white;
     padding-left: 30px;
     padding-bottom: 50px;
-    color:black;
+    color:rgb(26, 122, 9);
     display: flex;
     align-items: flex-end;
     justify-content:flex-start;
     
-    
 }
 
+
 .box1 {
-    background-image:url("../images/karoleal1.png");
+    background-image:url("../images/karoleal.png");
     grid-column: 1/ span 4; 
     grid-row: 1/ span 4;
 }
     
 .box2 {
-    background-image:url("../images/mostachos1.png");
+    background-image:url("../images/logo-mostachos2-06.svg");
     grid-column: 5/ span 4; 
     grid-row: 1/ span 2;
     
   }
 .box3 {
-    background-image:url("../images/run-buddy1.png");
     grid-column: 5/ span 4; 
     grid-row: 3/ span 2; 
   }
@@ -134,69 +131,19 @@ h2 {
 .contact-section {
     display: flex;
     flex-wrap:wrap;
-    justify-content:center;
+    justify-content:left;
     width: 90%;
 }
 .contact-section div ul li{
     display: inline;
 }
-
 .contact-section div ul li a{
     margin: 0 150px;
 }
 section {
     padding:60px;
 }
-
-@media screen and (max-width: 900px) {
-   /* >>> =====================================================
-   Added the following to overide padding and other added changes */
-
-    header nav ul li a{
-        margin: 0 5px;
-        font-weight: lighter;
-        font-size: 16px;
-        color: rgb(26, 122, 9);;
-        text-decoration:none;
-    }
-
-   section {
-        padding: 10px;
-    }
-    .about-section {
-        padding-top: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-    }
-    #about-me-text {
-        max-width: 100%;
-    }
-    .work-section {
-        padding-top: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-    }
-    .work-grid-container{
-        grid-gap:2px;
-        width: 100%;
-    }
-    .work-grid-item{
-        padding-left: 0px;
-        padding-bottom: 0px; 
-    }
-    .contact-section div ul li a{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        width: 100%;
-        margin: 0 0px;
-    }
-
-    /* >>> End additions 
-    ====================================================================*/
- 
+@media screen and (max-width: 375px) {
     header {
       padding-bottom: 0;
       justify-content: center;
@@ -212,19 +159,22 @@ section {
       width: 100%;
       justify-content: center;
     }
-
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
     #hero-subtitle{
        justify-content:center;
        text-align: center;
       margin-right: 0px;
     }
-   h2 {
+   /* h2 {
         min-width: 100%;
         margin-right: 0px;
         border-right:  0px solid;
         padding-right: 0px;
         text-align: center;
-    }
+    }*/
     .about-section h2 div{
         justify-content: center;
         width: 100%;
@@ -234,6 +184,4 @@ section {
         width: 100%;
 
     }
-
-}
 
