@@ -10,6 +10,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     background-color:lightgray;
     color: rgb(26, 122, 9);
+    width: 100%;
   }
   /* Start  Style Header*/
 header{
@@ -17,25 +18,17 @@ header{
     background-color:white;
     display:flex;
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 105%;
 }
+
 header h1{
     color: rgb(26, 122, 9);;
     font-weight: bold;
     font-size: 36px;
     margin-top: 10px;
 }
-/* >>> did not see any effects from the following 
-a{
-    color:rgb(26, 122, 9);
-    font-size: 10px;
-}
-header nav{
-    margin:7px 0;
-}
-*/
 header nav ul li {
     display: inline;
 }
@@ -44,17 +37,23 @@ header nav ul li a{
   margin: 0 30px;
   font-weight: lighter;
   font-size: 22px;
-  color: rgb(26, 122, 9);;
+  color: rgb(26, 122, 9);
   text-decoration:none;
 
 }
+header nav ul li a:hover {
+    background:rgb(26, 122, 9) ;
+    color: white;
+    border-radius: 5px;
+    text-shadow: none;
+  }
 /*End Style header*/
 /*Hero section*/
 .hero-section{
     background-image:url("../images/austin_panorama.png");
     height: 400px;
     display:flex;
-    justify-content: flex-end;
+    justify-content:flex-end;
     align-items: flex-end;
     width:100%;
 } 
@@ -64,7 +63,12 @@ header nav ul li a{
     color: white;
     margin-right: 200px;
 }
-
+.work-grid-container h3 {
+    background-color: rgb(26, 122, 9);
+    padding:15px;
+    color: white;
+    margin-right: 200px;
+}
 /*starts About me section*/
 
 .about-section {
@@ -102,7 +106,7 @@ h2 {
 }
 .work-grid-item{
     
-    border: solid white;
+    border: solid rgb(255, 255, 255);
     padding-left: 30px;
     padding-bottom: 50px;
     color:black;
@@ -118,6 +122,13 @@ h2 {
     grid-column: 1/ span 4; 
     grid-row: 1/ span 4;
 }
+.box1:hover {
+    opacity: 0.5;
+    filter:alpha(opcity=50);
+}
+.box1:active {
+
+}
     
 .box2 {
     background-image:url("../images/mostachos1.png");
@@ -125,17 +136,26 @@ h2 {
     grid-row: 1/ span 2;
     
   }
+.box2:hover {
+        opacity: 0.5;
+    filter:alpha(opcity=50);
+}
 .box3 {
     background-image:url("../images/run-buddy1.png");
     grid-column: 5/ span 4; 
     grid-row: 3/ span 2; 
   }
+.box3:hover {
+    opacity: 0.5;
+filter:alpha(opcity=50);
+}
   /*Contact Section*/
 .contact-section {
     display: flex;
     flex-wrap:wrap;
-    justify-content:center;
-    width: 90%;
+    justify-content:left;
+    width:100%;
+
 }
 .contact-section div ul li{
     display: inline;
@@ -148,29 +168,30 @@ section {
     padding:60px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
    /* >>> =====================================================
    Added the following to overide padding and other added changes */
-
+    
     header nav ul li a{
         margin: 0 5px;
         font-weight: lighter;
         font-size: 16px;
         color: rgb(26, 122, 9);;
         text-decoration:none;
+        flex: 1 100%;
     }
 
-   section {
-        padding: 10px;
-    }
+   
     .about-section {
         padding-top: 10px;
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 10px;
+        flex: 1 100%;
     }
     #about-me-text {
-        max-width: 100%;
+        font-size: 14px;
+        max-width: 90%;
     }
     .work-section {
         padding-top: 10px;
@@ -191,7 +212,7 @@ section {
         flex-wrap:wrap;
         justify-content:center;
         width: 100%;
-        margin: 0 0px;
+        margin-left: 225px;
     }
 
     /* >>> End additions 
@@ -200,6 +221,7 @@ section {
     header {
       padding-bottom: 0;
       justify-content: center;
+      width: 100%;
     }
   
    /* header div {
@@ -236,4 +258,182 @@ section {
     }
 
 }
+@media screen and (max-width: 768px) {
+    /* >>> =====================================================
+    Added the following to overide padding and other added changes */
+     
+     header nav ul li a{
+         margin: 0 5px;
+         font-weight: lighter;
+         font-size: 25px;
+         color: rgb(26, 122, 9);;
+         text-decoration:none;
+     }
+ 
+    section {
+         padding: 10px;
+     }
+     .about-section {
+         padding-top: 10px;
+         padding-left: 10px;
+         padding-right: 10px;
+         padding-bottom: 10px;
+     }
+     #about-me-text {
+         max-width: 100%;
+     }
+     .work-section {
+         padding-top: 10px;
+         padding-left: 10px;
+         padding-right: 10px;
+         padding-bottom: 10px;
+     }
+     .work-grid-container{
+         grid-gap:2px;
+         width: 100%;
+     }
+     .work-grid-item{
+         padding-left: 0px;
+         padding-bottom: 0px; 
+     }
+     .contact-section div ul li a{
+         display:flex;
+         flex-wrap:wrap;
+         justify-content:center;
+         width: 100%;
+         margin-left: 130px;
+     }
+ 
+     /* >>> End additions 
+     ====================================================================*/
+  
+     header {
+       padding-bottom: 0;
+       justify-content: center;
+       width: 100%;
+     }
+   
+    /* header div {
+       width: 100%;
+       text-align: center;
+     }*/
+   
+     header nav ul {
+       margin-top: 10px;
+       width: 100%;
+       justify-content: center;
+     }
+ 
+     #hero-subtitle{
+        justify-content:center;
+        text-align: center;
+       margin-right: 0px;
+     }
+    h2 {
+         min-width: 100%;
+         margin-right: 0px;
+         border-right:  0px solid;
+         padding-right: 0px;
+         text-align: center;
+     }
+     .about-section h2 div{
+         justify-content: center;
+         width: 100%;
+     }
+     .work-section h2 div{
+         justify-content: center;
+         width: 100%;
+ 
+     }
+ 
+ }
+ @media screen and (max-width: 375px) {
+    /* >>> =====================================================
+    Added the following to overide padding and other added changes */
+     
+     header nav ul li a{
+         margin: 0 5px;
+         font-weight: lighter;
+         font-size: 16px;
+         color: rgb(26, 122, 9);;
+         text-decoration:none;
+     }
+ 
+    section {
+         padding: 10px;
+     }
+     .about-section {
+         padding-top: 10px;
+         padding-left: 10px;
+         padding-right: 10px;
+         padding-bottom: 10px;
+     }
+     #about-me-text {
+         max-width: 100%;
+     }
+     .work-section {
+         padding-top: 10px;
+         padding-left: 10px;
+         padding-right: 10px;
+         padding-bottom: 10px;
+     }
+     .work-grid-container{
+         grid-gap:2px;
+         width: 100%;
+     }
+     .work-grid-item{
+         padding-left: 0px;
+         padding-bottom: 0px; 
+     }
+     .contact-section div ul li a{
+         display:flex;
+         flex-wrap:wrap;
+         justify-content:center;
+         width: 100%;
+         margin: 40px;
+     }
+ 
+     /* >>> End additions 
+     ====================================================================*/
+  
+     header {
+       padding-bottom: 0;
+       justify-content: center;
+       width: 100%;
+     }
+   
+    /* header div {
+       width: 100%;
+       text-align: center;
+     }*/
+   
+     header nav ul {
+       margin-top: 10px;
+       width: 100%;
+       justify-content: center;
+     }
+ 
+     #hero-subtitle{
+        justify-content:center;
+        text-align: center;
+       margin-right: 0px;
+     }
+    h2 {
+         min-width: 100%;
+         margin-right: 0px;
+         border-right:  0px solid;
+         padding-right: 0px;
+         text-align: center;
+     }
+     .about-section h2 div{
+         justify-content: center;
+         width: 100%;
+     }
+     .work-section h2 div{
+         justify-content: center;
+         width: 100%;
+ 
+     }
+ 
+ }
 
