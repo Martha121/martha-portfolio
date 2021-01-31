@@ -120,16 +120,13 @@ h2 {
 .box1 {
     background-image:url("../images/karoleal1.png");
     grid-column: 1/ span 4; 
-    grid-row: 1/ span 4;
+    grid-row: 1/ span 2;
 }
 .box1:hover {
     opacity: 0.5;
     filter:alpha(opcity=50);
 }
-.box1:active {
-
-}
-    
+   
 .box2 {
     background-image:url("../images/mostachos1.png");
     grid-column: 5/ span 4; 
@@ -148,6 +145,15 @@ h2 {
 .box3:hover {
     opacity: 0.5;
 filter:alpha(opcity=50);
+}
+.box4 {
+    background-image:url("../images/chooseandchill.png");
+    grid-column: 1/ span 4; 
+    grid-row: 3/ span 2;
+}
+.box4:hover {
+    opacity: 0.5;
+    filter:alpha(opcity=50);
 }
   /*Contact Section*/
 .contact-section {
