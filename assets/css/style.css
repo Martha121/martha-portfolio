@@ -97,7 +97,7 @@ h2 {
 .work-grid-container{
     display:grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(4, 100px);
+    grid-template-rows: repeat(6, 100px);
     grid-gap:10px;
     font-size: 1.2rem;
     width: 80%;
@@ -150,6 +150,16 @@ filter:alpha(opcity=50);
     background-image:url("../images/chooseandchill.png");
     grid-column: 1/ span 4; 
     grid-row: 3/ span 2;
+}
+.box4:hover {
+    opacity: 0.5;
+    filter:alpha(opcity=50);
+}
+
+.box5 {
+    background-image:url("../images/labmanager.png");
+    grid-column: 1/ span 8; 
+    grid-row: 5/ span 2;
 }
 .box4:hover {
     opacity: 0.5;
